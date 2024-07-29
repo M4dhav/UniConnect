@@ -61,7 +61,7 @@ class _NavBarState extends State<NavBar> {
               duration: Duration(milliseconds: 400),
               tabBackgroundColor: Colors.grey[100]!,
               color: Colors.black,
-              tabs: [
+              tabs: const [
                 GButton(
                   icon: Icons.people,
                   text: 'Friends',
