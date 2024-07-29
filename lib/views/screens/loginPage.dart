@@ -32,7 +32,7 @@ class loginPage extends StatelessWidget {
                 fixedSize: WidgetStatePropertyAll(Size(screenSize.width*0.8,screenSize.height*0.07)),
                 shape: WidgetStatePropertyAll(RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)))
               ),
-              child: const Text("SignIn With Google"),
+              child: const Text("SignIn With Outlook"),
             )
           ],
         ),
