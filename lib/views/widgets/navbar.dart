@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
+import 'package:uniconnect/views/screens/homepage_screen.dart';
 
 class NavBar extends StatefulWidget {
   const NavBar({super.key});
@@ -9,7 +10,7 @@ class NavBar extends StatefulWidget {
 }
 
 class _NavBarState extends State<NavBar> {
-  int _selectedIndex = 0;
+  int _selectedIndex = 1;
   static const TextStyle optionStyle =
       TextStyle(fontSize: 30, fontWeight: FontWeight.w600);
   static const List<Widget> _widgetOptions = <Widget>[
@@ -17,10 +18,7 @@ class _NavBarState extends State<NavBar> {
       'Likes',
       style: optionStyle,
     ),
-    Text(
-      'Search',
-      style: optionStyle,
-    ),
+    HomePage(),
     Text(
       'Profile',
       style: optionStyle,
@@ -56,6 +54,7 @@ class _NavBarState extends State<NavBar> {
               hoverColor: Colors.grey[100]!,
               gap: 8,
               activeColor: Colors.black,
+              style: GnavStyle.google,
               iconSize: 24,
               padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
               duration: Duration(milliseconds: 400),
