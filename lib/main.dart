@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:uniconnect/views/screens/loginPage.dart';
+import 'package:sizer/sizer.dart';
+import 'package:uniconnect/views/screens/login_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,13 +11,16 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.lightBlue),
-        useMaterial3: true,
-      ),
-      home: const loginPage(),
+    return Sizer(
+      builder: (context, orientation, deviceType) {
+        return MaterialApp(
+          theme: ThemeData(
+            colorScheme: ColorScheme.fromSeed(seedColor: Colors.lightBlue),
+            useMaterial3: true,
+          ),
+          home: const LoginPage(),
+        );
+      },
     );
   }
 }
