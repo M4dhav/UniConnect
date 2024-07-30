@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
-import 'package:uniconnect/views/screens/homepage_screen.dart';
+import 'package:uniconnect/views/screens/home_page.dart';
 
 class NavBar extends StatefulWidget {
   const NavBar({super.key});

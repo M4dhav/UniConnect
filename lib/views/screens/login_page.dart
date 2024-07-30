@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:sizer/sizer.dart';
+import 'package:uniconnect/views/widgets/navbar.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -34,7 +36,9 @@ class _LoginPageState extends State<LoginPage> {
               ),
             ),
             FilledButton(
-              onPressed: () {},
+              onPressed: () {
+                Get.to(NavBar());
+              },
               style: ButtonStyle(
                 fixedSize: WidgetStatePropertyAll(
                   Size(80.w, 7.h),
