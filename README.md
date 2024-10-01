@@ -1,10 +1,28 @@
-# uniconnect
+# Uniconnect
 
-A new Flutter project.
+Official project under Mobilon BU for the tenure 2023-24
+Features:
+- View real-time crowd analytic data
+- Discover friend locations in real-time
+- Find the best times to visit campus 'hotspots'
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+- Step 1:
+  Clone the repo on your local device:
+  ```git clone https://github.com/M4dhav/UniConnect.git```
+  
+- Step 2:
+  Navigate into the project directory:
+  ```cd uniconnect```
+
+- Step 3:
+  Run your project:
+  ```flutter run```
+
+
+## [Figma Link for UI Implementations](https://www.figma.com/design/ywG2OYCeg9OqdAuQssB9uW/Friends-Finder---Splash?node-id=702-60&t=d5YBlqv0PkczwTr3-1)
+
 
 A few resources to get you started if this is your first Flutter project:
 
